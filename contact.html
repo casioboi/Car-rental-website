@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="scripts.js" defer></script>
+
+    
+
+   
+    <title>VromRide</title>
+   
+</head>
+
+<body>
+<nav>
+    <a href="index.html" class="brand">
+        <h1>Vrom<b class="accent">Ride</b></h1>
+    </a>
+
+    <div class="menu">
+        <div class="btn">
+            <i class="fas fa-times close-btn"></i>
+        </div>
+        <a href="index.html">HOME</a>
+        <a href="collection.html">CARS</a>
+        <a href="index.html#about">ABOUT</a>
+        <a href="index.html#testimonials">REVIEWS</a>
+    </div>
+
+    <button class="btn-2" onclick="window.location.href='contact.html'">
+    Get Started 
+    </button>
+
+    <div class="btn">
+        <i class="fas fa-bars menu-btn"></i>
+    </div>
+</nav>
+   
+<!-----Contact Section------>
+
+<section class="contact">
+    <h1>Get in Touch for Your Dream Ride</h1>
+    <p>Have questions or need assistance? Our team is here to help you find the perfect car for yor adventure</p>
+
+<form action="https://api.web3forms.com/submit" method="POST">
+    <!-----Replace with access key-->
+<input type="hidden" name="access_key" value="2cf1a8ee-b7c0-4986-a917-1ead8036bec1">
+
+<div class="car-select">
+    <div class="car-select-item">
+        <label for="location">Location: </label>
+        <select id="location" class="car-select-input" id="location">
+            <option value="Achimota">Achimota</option>
+            <option value="Spintex">Spintex</option>
+            <option value="Tema">Tema</option>
+            <option value="East Legon">East Legon</option>
+        </select>
+    </div>
+
+    <div class="car-select-item">
+        <label for="car-type">Car to rent: </label>
+        <select id="car-type" class="car-select-input" id="car-type">
+            <option value="Mercedes-AMG GT R">Mercedes-AMG GT R</option>
+            <option value="Lamborghini Venemo">Lamborghini Venemo</option>
+            <option value="Rolls Royce Dawn">Rolls Royce Dawn</option>
+            <option value="Toyota 86 - Coupe">Toyota 86 - Coupe</option>
+        </select>
+    </div>
+
+    <div class="car-select-item">
+        <label for="date">Date: </label>
+        <input type="date" id="date" name="date" class="car-select-input"/>   
+    </div>
+</div>
+
+<div class="contact-form">
+    <input type="text" name="name" placeholder="Name" required/>
+    <input type="email" name="email" placeholder="Email" required/>
+    <input type="phone" name="phone" placeholder="Phone" required/>
+    <button type="submit" class="btn-2">Submit</button>
+</div>
+
+</form>
+
+</section>
+
+<!----footer-->
+<footer class="contact-footer">
+    <div class=" callout">
+        <h2>Let's drive with VromRide Today!</h2>
+        <p class="callout-description">
+            Need assistance or ready to reserve your wheels? 
+            Contact us now for prompt service and effortless booking!
+        </p>
+        <div class="callout-buttons">
+            <button class="btn-2 btn-callout" 
+            onclick="window.location.href='collection.html'">
+        <p>Check Our Cars</p>
+        <i class="fa-solid fa-arrow-right-long"></i>
+        </button>
+
+        <button class="btn-2 btn-callout btn-callout-black" 
+            onclick="window.location.href='contact.html'">
+        <p>Book Now</p>
+        <i class="fa-solid fa-phone"></i>
+        </button>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <a href="/" class="footer-brand">Vrom<b class="accent">Ride</b></a>
+       <div class="social">
+        <a href="/" class="social-item">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="/" class="social-item">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="/" class="social-item">
+            <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a href="/" class="social-item">
+            <i class="fa-brands fa-telegram"></i>
+        </a>
+       </div> 
+    </div>
+</footer>
+</body>
+
+</html>
